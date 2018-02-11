@@ -6,12 +6,12 @@ FROM node:slim
 MAINTAINER Madhu Akula <madhu@appsecco.com>
 
 # Change the raneto version based on version you want to use
-ENV RANETO_VERSION 0.13.0
+ENV RANETO_VERSION master
 ENV RANETO_INSTALL_DIR /opt/raneto
 
 # Get Raneto from sources
 RUN cd /tmp \
-    && curl -SLO "https://github.com/gilbitron/Raneto/archive/$RANETO_VERSION.tar.gz" \
+    && curl -SLO "https://github.com/gugu/Raneto/archive/$RANETO_VERSION.tar.gz" \
     && mkdir -p $RANETO_INSTALL_DIR \
     && tar -xzf "$RANETO_VERSION.tar.gz" -C $RANETO_INSTALL_DIR --strip-components=1 \
     && rm "$RANETO_VERSION.tar.gz"
