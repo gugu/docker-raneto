@@ -3,7 +3,7 @@
 # Reference (https://github.com/sparkfabrik/docker-node-raneto)
 # Using official node:slim from the dockerhub (https://hub.docker.com/_/node/)
 FROM node:slim
-MAINTAINER Madhu Akula <madhu@appsecco.com>
+MAINTAINER Andrii Kostenko <andrii@short.cm>
 
 # Change the raneto version based on version you want to use
 ENV RANETO_VERSION master
